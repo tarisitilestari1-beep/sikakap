@@ -14,7 +14,7 @@ $query_total = mysqli_query($koneksi, "SELECT COUNT(*) as total FROM ms_aset");
 $data_total = mysqli_fetch_assoc($query_total);
 
 // Hitung Aset Terisi
-$query_terisi = mysqli_query($koneksi, "SELECT COUNT(DISTINCT id_aset) as total FROM tr_kontrak WHERE status_sewa = 'Aktif'");
+$query_terisi = mysqli_query($koneksi, "SELECT COUNT(DISTINCT id_unit_setting) as total FROM tr_kontrak WHERE status_sewa = 'Aktif'");
 $data_terisi = mysqli_fetch_assoc($query_terisi);
 
 // Hitung Aset Kosong

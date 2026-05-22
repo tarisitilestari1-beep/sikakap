@@ -10,7 +10,7 @@ if($_SESSION['status'] != "login"){
 
 
 // Hitung Total Aset
-$query_total = mysqli_query($koneksi, "SELECT COUNT(*) as total FROM ms_aset");
+$query_total = mysqli_query($koneksi, "SELECT COUNT(*) as total FROM master_aset");
 $data_total = mysqli_fetch_assoc($query_total);
 
 // Hitung Aset Terisi

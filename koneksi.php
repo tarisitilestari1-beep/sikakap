@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "db_sikakap";
+$db   = "db_sikakap_v2";
 
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 
